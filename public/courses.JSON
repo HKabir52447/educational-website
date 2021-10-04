@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "teacher": "MD.Humayun Kabir",
+      "sub": "Math"
+    },
+    {
+      "id": 3,
+      "teacher": "Rayhan Sobhan",
+      "sub": "Biology"
+    },
+    {
+      "id": 5,
+      "teacher": "Abdul Kaiym",
+      "sub": "Accounting"
+    },
+    {
+      "id": 6,
+      "teacher": "MD.Shiharon",
+      "sub": "Finance"
+    },
+    {
+      "id": 7,
+      "teacher": "Tanbir",
+      "sub": "Chemistry"
+    },
+    {
+      "id": 8,
+      "teacher": "Hasnien Farazee",
+      "sub": "Physics"
+    },
+    {
+      "id": 9,
+      "teacher": "Masum Billah",
+      "sub": "Physics"
+    },
+    {
+      "id": "10",
+      "teacher": "Parvez Hossain",
+      "sub": "English"
+    }
+  ]
+  
