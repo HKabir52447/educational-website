@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* :root{
+    --green: #27ae60;
+    --black: #192a56;
+    --light: #666;
+} */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-left: 5rem;
+    text-decoration: none;
+    color: black;
+}
+.logo .fa-user-graduate{
+    color: #27ae60;
+    font-size: 2.5rem;
+    padding-right: 5px;
+    padding-top: 6px;
+}
+.logo:hover{
+    color: black;
+}
+.logo-text{
+    color: #27ae60;
+}
+.navigation-bar{
+    padding-right: 15rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.3rem 1.1rem;
+    font-size: 1.2rem;
+    color: #192a56;
+    font-weight: 500;
+    margin-right: 4px;
+}
+.menu-link:hover{
+    background: #27ae60;
+    color: #fff;
+    border-radius: 5px;
+}
