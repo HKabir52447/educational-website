@@ -69,6 +69,11 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+
+      {/* services section */}
+      <div>
+      
+      </div>
     </div>
   );
 };
