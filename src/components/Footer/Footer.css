@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 2rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.185);
+    background: #fff;
 }
 .social-media{
     margin-right: 10rem;

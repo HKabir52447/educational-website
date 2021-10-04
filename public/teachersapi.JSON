@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "MD.Humayun Kabir",
+    "sub": "Math",
+    "university": "Jagannath University",
+    "img": "https://i.postimg.cc/tC46VLN9/HK-himu.jpg"
+  },
+  {
+    "id": 2,
+    "name": "MD.Azmain Molla",
+    "sub": "Math",
+    "university": "Patuakhali govt college",
+    "img": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1021&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Rayhan Sobhan",
+    "sub": "Biology",
+    "university": "East West university",
+    "img": "https://i.postimg.cc/BQYGWNKy/himel.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Monjurul Islam",
+    "sub": "Biology",
+    "university": "Govt Titumir college",
+    "img": "https://i.postimg.cc/MGRkQSF2/monju.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Abdul Kaiym",
+    "sub": "Accounting",
+    "university": "Patuakhali govt college",
+    "img": "https://i.postimg.cc/kMyms7X7/kayum.jpg"
+  },
+  {
+    "id": 6,
+    "name": "MD.Shiharon",
+    "sub": "Finance",
+    "university": "Chandpur govt college",
+    "img": "https://i.postimg.cc/g21FjJ4H/shiharon.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Tanbir",
+    "sub": "Chemistry",
+    "university": "Asia pacific university",
+    "img": "https://i.postimg.cc/vBrdpsrL/tanbir.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Hasnien Farazee",
+    "sub": "Physics",
+    "university": "Asia pacific university",
+    "img": "https://i.postimg.cc/gJFWSJZ2/shahed.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Masum Billah",
+    "sub": "Physics",
+    "university": "Kabi nazrul govt college",
+    "img": "https://i.postimg.cc/MGjwmRXL/masum.jpg"
+  },
+  {
+    "id": "10",
+    "name": "Parvez Hossain",
+    "sub": "English",
+    "university": "Daffodil university",
+    "img": "https://i.postimg.cc/qBC3L947/parvej.jpg"
+  }
+]

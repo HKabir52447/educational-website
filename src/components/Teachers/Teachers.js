@@ -1,12 +1,25 @@
-import React from 'react';
-import './Teachers.css';
+import React, { useEffect, useState } from "react";
+import Teacher from "../Teacher/Teacher";
+import "./Teachers.css";
 
 const Teachers = () => {
-    return (
-        <div>
-            <h2>This is teachers section</h2>
-        </div>
-    );
+  const [teachers, setTeachers] = useState([]);
+  useEffect(() => {
+    fetch("teachersapi.JSON")
+      .then((res) => res.json())
+      .then((data) => setTeachers(data));
+  }, []);
+  return (
+    <div className="teachers pt-4">
+      <h5 className="text-center sub-heading">Teachers</h5>
+      <h3 className="text-center heading">Qualitiful Teachers</h3>
+      <div className="teacher-container">
+        {teachers.map((teacher) => (
+          <Teacher key={teacher.id} teacher={teacher}></Teacher>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Teachers;

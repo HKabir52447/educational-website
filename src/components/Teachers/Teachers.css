@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #dfe6e998;
+}
+.teacher-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    margin: 0 auto;
+    width: 90%;
+    padding-bottom: 2rem;
+}
+.sub-heading{
+    color: #27ae27;
+}
+.heading{
+    color: #192a56;
+    padding-bottom: 1rem;
+}
