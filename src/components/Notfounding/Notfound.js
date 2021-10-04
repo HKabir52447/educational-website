@@ -1,9 +1,12 @@
 import React from 'react';
+import './Notfound.css'
 
 const Notfound = () => {
     return (
-        <div>
-            <h2>This is 404 section</h2>
+        <div className='notfound'>
+            <div>
+            <img className='img-fluid' src='https://www.sitesbay.com/files/404.gif' alt='404 page not found' />
+            </div>
         </div>
     );
 };

@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
         <div>
           <textarea
-            className="w-100"
+            className="w-100 form-control"
             rows="10"
             placeholder="Enter your message"
           ></textarea>
@@ -45,6 +45,14 @@ const Contact = () => {
             {" "}
             Send{" "}
           </button>
+        </div>
+        <div className='address pt-4'>
+          <div>
+          <h4 className='sub-heading'>Bright Future <span className='heading'>teaching center</span> </h4>
+          <h5>Hazi salimullah road, <br/> nama Shyampur Dhaka -1204</h5>
+          <p>Phone: 01234354566</p>
+          <h6>Email: Brightfuture@gmail.com</h6>
+          </div>
         </div>
       </div>
     </div>

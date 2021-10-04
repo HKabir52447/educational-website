@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -71,11 +72,70 @@ const Home = () => {
       </div>
 
       {/* services section */}
-      <div>
-      
+      {<Homecourse></Homecourse>}
+    </div>
+  );
+};
+
+const Homecourse = () => {
+  const [course, setCourse] = useState([]);
+  useEffect(() => {
+    fetch("homecoursesapi.JSON")
+      .then((res) => res.json())
+      .then((data) => setCourse(data));
+  }, []);
+  return (
+    <div className='pt-5'>
+      <h5 className="sub-heading text-center pt-2">Services</h5>
+      <h3 className="heading text-center">Our Courses</h3>
+      <div className='home-course'>
+        {course.map((course) => (
+          <Showcourse key={course.id} course={course}></Showcourse>
+        ))}
+      </div>
+      <div className='text-center mb-3'>
+      <NavLink className='btn sub-heading px-5 py-1 enroll fs-3' to='/services'>See More</NavLink>
       </div>
     </div>
   );
 };
 
+// home shocourse
+const Showcourse = (props) => {
+  const { teacher, sub, price, img } = props.course;
+  return (
+    <div>
+      <div className="course">
+        <img className="img-fluid" src={img} alt={sub} />
+        <h4 className="sub-heading text-center">{sub}</h4>
+        <h5 className="heading pb-1"> Course teacher: {teacher} </h5>
+        <p>
+          Welcome to Bright Future course. Here we provied academic lessons by
+          qualitiful teachers
+        </p>
+        <div className="d-flex justify-content-evenly">
+          <p>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i> <i class="fas fa-star-half-alt"></i>
+          </p>
+          <h4 className="heading pb-2">
+            {" "}
+            $<span className="sub-heading">{price}</span>{" "}
+          </h4>
+        </div>
+        <div className="text-center">
+          <button className="btn sub-heading px-4 py-1 enroll fs-4">
+            {" "}
+            Enroll{" "}
+            <span className="arrow">
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </span>{" "}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 export default Home;
