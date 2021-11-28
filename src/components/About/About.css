@@ -4,8 +4,12 @@ video{
 .about-details{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 80%;
     margin:0 auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+@media screen and (max-width: 768px){
+  .about-details{
+    grid-template-columns: 1fr;
+  }
 }

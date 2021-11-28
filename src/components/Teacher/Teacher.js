@@ -10,7 +10,7 @@ const Teacher = (props) => {
             <h4 className='name'>{name}</h4>
             <h6>Sub: {sub} </h6>
             <p> University: {university} </p>
-            <div className='social-media mx-5'> 
+            <div className='social-media w-100 d-flex justify-content-evenly'> 
                 <a href='https://www.facebook.com/' target='blank'><i class="fab fa-facebook-f"></i></a>
                 <a href='https://www.instagram.com/?hl=en' target='blank'><i class="fab fa-instagram"></i></a>
                 <a href='https://www.linkedin.com/' target='blank'><i class="fab fa-linkedin-in"></i></a>

@@ -6,13 +6,11 @@
 .footer{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding-top: 2rem;
     border-top: 1px solid rgba(128, 128, 128, 0.185);
     background: #fff;
-}
-.social-media{
-    margin-right: 10rem;
 }
 .social-media a{
     display: inline-block;

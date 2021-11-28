@@ -3,15 +3,19 @@
     padding-bottom: 5rem;
 }
 .form{
-    width: 60%;
     margin: 0 auto;
+    width: 80%;
 }
 .address{
     margin: 0 auto;
     background: #fff;
     margin-top: 2rem;
-    display: flex;
-    justify-content: center;
     border-radius: 5px;
     padding: 2rem 0;
+}
+
+@media screen and (max-width: 992px){
+    .form{
+        width: 90%;
+    }
 }

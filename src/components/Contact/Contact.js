@@ -3,23 +3,27 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div className="contact container">
       <h5 className="sub-heading text-center pt-2"> Contact us </h5>
       <h3 className="heading text-center">Get in touch </h3>
       <div className="form">
-        <div className="d-flex">
-          <input
+        <div className="d-md-flex">
+         <div className='mb-3 w-100'>
+         <input
             type="text"
-            className="form-control w-50 me-5"
+            className="form-control"
             placeholder="Enter your first name"
           ></input>
-          <input
+         </div>
+         <div className='mb-3 w-100'>
+         <input
             type="text"
-            className="form-control w-50 ms-5"
+            className="form-control"
             placeholder="Enter your last name"
           ></input>
+         </div>
         </div>
-        <div className="my-3">
+        <div className="mb-3">
           <input
             type="eamil"
             className="form-control"
@@ -46,7 +50,7 @@ const Contact = () => {
             Send{" "}
           </button>
         </div>
-        <div className='address pt-4'>
+        <div className='address pt-4 px-4'>
           <div>
           <h4 className='sub-heading'>Bright Future <span className='heading'>teaching center</span> </h4>
           <h5>Hazi salimullah road, <br/> nama Shyampur Dhaka -1204</h5>
@@ -55,6 +59,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };

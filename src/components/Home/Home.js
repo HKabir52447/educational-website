@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import Teacher from "../Teacher/Teacher";
 import "./Home.css";
 
 const Home = () => {
+  const [teachers, setTeachers] = useState([]);
+  useEffect(() => {
+    fetch("teachersapi.JSON")
+      .then((res) => res.json())
+      .then((data) => setTeachers(data.slice(0,6)));
+  }, []);
   return (
     <div>
       {/* bootstrap carousel */}
@@ -71,8 +78,19 @@ const Home = () => {
         </button>
       </div>
 
-      {/* services section */}
-      {<Homecourse></Homecourse>}
+      <div>
+      <Homecourse></Homecourse>
+      </div>
+      <div className="teachers pt-4">
+      <h5 className="text-center sub-heading">Teachers</h5>
+      <h3 className="text-center heading">Our Qualitiful Teachers</h3>
+      <div className="teacher-container container">
+        {teachers.map((teacher) => (
+          <Teacher key={teacher.id} teacher={teacher}></Teacher>
+        ))}
+      </div>
+    </div>
+      
     </div>
   );
 };
@@ -80,35 +98,37 @@ const Home = () => {
 const Homecourse = () => {
   const [course, setCourse] = useState([]);
   useEffect(() => {
-    fetch("homecoursesapi.JSON")
+    fetch("courses.JSON")
       .then((res) => res.json())
-      .then((data) => setCourse(data));
+      .then((data) => setCourse(data.slice(0,6)));
   }, []);
   return (
     <div className='pt-5'>
       <h5 className="sub-heading text-center pt-2">Services</h5>
       <h3 className="heading text-center">Our Courses</h3>
-      <div className='home-course'>
+      <div className='course-container container'>
         {course.map((course) => (
           <Showcourse key={course.id} course={course}></Showcourse>
         ))}
       </div>
-      <div className='text-center mb-3'>
+      <div className='text-center my-3'>
       <NavLink className='btn sub-heading px-5 py-1 enroll fs-3' to='/services'>See More</NavLink>
       </div>
     </div>
   );
 };
 
-// home shocourse
+// home showcourse
 const Showcourse = (props) => {
+  console.log(props.course);
   const { teacher, sub, price, img } = props.course;
   return (
     <div>
-      <div className="course">
+      <div className="course container">
         <img className="img-fluid" src={img} alt={sub} />
         <h4 className="sub-heading text-center">{sub}</h4>
-        <h5 className="heading pb-1"> Course teacher: {teacher} </h5>
+        <h5 className="heading pb-0 text-center"> {teacher} </h5>
+        <small className='d-block text-center pb-2'>Course teacher</small>
         <p>
           Welcome to Bright Future course. Here we provied academic lessons by
           qualitiful teachers

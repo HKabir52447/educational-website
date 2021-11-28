@@ -1,21 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.carousel-item img{
-    height: 600px;
+.carousel-item img {
+  height: 600px;
 }
 
-.carousel-caption{
-   background-color: rgba(0, 0, 0, 0.192);
-   margin-bottom: 5rem;
- }
- .home-course{
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     grid-gap: 3rem;
-     width: 70%;
-     margin: 0 auto;
-     padding-bottom: 2.5rem;
- }
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.192);
+  margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .teacher-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 575px) {
+  .teacher-container {
+    grid-template-columns: 1fr;
+  }
+
+}

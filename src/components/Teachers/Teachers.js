@@ -13,7 +13,7 @@ const Teachers = () => {
     <div className="teachers pt-4">
       <h5 className="text-center sub-heading">Teachers</h5>
       <h3 className="text-center heading">Our Qualitiful Teachers</h3>
-      <div className="teacher-container">
+      <div className="teacher-container container">
         {teachers.map((teacher) => (
           <Teacher key={teacher.id} teacher={teacher}></Teacher>
         ))}
